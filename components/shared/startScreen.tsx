@@ -1,10 +1,18 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export const StartScreen = () => {
 
     return (
-        <div className="w-[1401px] h-[1080px]">
-            <Image src="/home/startScreen.jpg" fill alt="start screen" className="" />
+        <div className="relative w-[140.1rem] h-[100dvh]">
+            <Image
+                priority={true}
+                fill
+                alt="start screen"
+                className="object-cover"
+                placeholder="blur"
+                src="/home/startScreen.jpg"
+                blurDataURL="/home/startScreen_low.jpg"
+            />
         </div>
     )
 }
