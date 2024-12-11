@@ -3,13 +3,12 @@
 import { PDA, StartNavigation, StartScreen } from "@/components/shared";
 
 export default function Home() {
+
   return (
-    <div
-      className="flex"
-    >
+    <main className="flex">
       <StartNavigation />
       <StartScreen />
       <PDA />
-    </div>
+    </main>
   );
 }

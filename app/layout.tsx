@@ -45,11 +45,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
       <body
         className={`${calibri.variable} ${stalker.variable} ${roboto_condensed.variable} antialiased`}
       >
-        <header></header>
-        <main>
-          {children}
-        </main>
-        <footer></footer>
+        {children}
       </body>
     </html>
   );
