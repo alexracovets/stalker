@@ -26,7 +26,12 @@ export const PDAVideo = () => {
     };
 
     const handleVideoEnd = () => {
-        isOpenedPDA ? router.push("/pda") : router.push("/");
+        if (isOpenedPDA) {
+            router.push("/pda");
+        } else {
+            router.push("/");
+        }
+        
         setTimeout(() => {
             setIsPlay(false);
         }, 300);
