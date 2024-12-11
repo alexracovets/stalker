@@ -12,7 +12,9 @@ const AuthLayout = ({ children }: ChildrenProps) => {
   return (
     <>
       <HeaderPDA />
-      <main>
+      <main
+        className="flex flex-grow pt-[.3rem]"
+      >
         {children}
       </main>
       <FooterPDA />

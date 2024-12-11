@@ -4,6 +4,7 @@ export { NavigationPDA } from './navigationPDA';
 export { CurrentTime } from './currentTime';
 export { StartScreen } from './startScreen';
 export { StartLinks } from './startLinks';
+export { DisplayPDA } from './displayPDA';
 export { HeaderPDA } from './headerPDA';
 export { FooterPDA } from './footerPDA';
 export { VideoPDA } from './videoPDA';

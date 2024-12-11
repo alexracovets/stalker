@@ -37,7 +37,8 @@ export default {
 					border: "#403E3C",
 					destructive: "#CABFB0",
 					links: "#7B7A78",
-					linksActive: "#BFBCB7"
+					linksActive: "#BFBCB7",
+					display: "#14110F"
 				},
 				gradient: {
 					colorOne: "#898883",
