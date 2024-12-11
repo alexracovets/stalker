@@ -11,7 +11,7 @@ export const VideoPDA = () => {
     const router = useRouter();
     const videoRef = useRef<HTMLVideoElement>(null);
     const isPlay = usePDA(state => state.isPlay);
-    const isOpenedPDA = usePDA(state => state.isOpen);
+    // const isOpenedPDA = usePDA(state => state.isOpen);
 
     const setIsPlay = usePDA(state => state.setIsPlay);
 
