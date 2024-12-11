@@ -6,4 +6,4 @@ export { StartScreen } from './startScreen';
 export { StartLinks } from './startLinks';
 export { HeaderPDA } from './headerPDA';
 export { FooterPDA } from './footerPDA';
-export { PDAVideo } from './pDAVideo';
+export { VideoPDA } from './videoPDA';

@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import usePDA from '@/store/usePDA';
 
-export const PDAVideo = () => {
+export const VideoPDA = () => {
     const router = useRouter();
     const videoRef = useRef<HTMLVideoElement>(null);
     const isPlay = usePDA(state => state.isPlay);
@@ -23,11 +23,8 @@ export const PDAVideo = () => {
     };
 
     const handleVideoEnd = () => {
-        if (isOpenedPDA) {
-            router.push("/pda");
-        } else {
-            router.push("/");
-        }
+        console.log(1)
+        router.push("/pda");
         setTimeout(() => {
             setIsPlay(false);
         }, 300)
