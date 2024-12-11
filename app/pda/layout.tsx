@@ -1,5 +1,6 @@
 "use client";
 
+import { FooterPDA, HeaderPDA } from "@/components/shared";
 import React from "react";
 
 interface ChildrenProps {
@@ -9,9 +10,13 @@ interface ChildrenProps {
 const AuthLayout = ({ children }: ChildrenProps) => {
 
   return (
-    <main className="bg-neutral-100 min-h-screen">
-      {children}
-    </main>
+    <>
+      <HeaderPDA />
+      <main>
+        {children}
+      </main>
+      <FooterPDA />
+    </>
   )
 }
 

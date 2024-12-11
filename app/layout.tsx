@@ -38,14 +38,19 @@ export const metadata: Metadata = {
 };
 
 import "./globals.scss";
+import Head from 'next/head';
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="uk">
       <body
-        className={`${calibri.variable} ${stalker.variable} ${roboto_condensed.variable} antialiased`}
+        className={`${calibri.variable} ${stalker.variable} ${roboto_condensed.variable} antialiased bg-main-black`}
       >
         {children}
+        <Head>
+          <script src="/_next/static/chunks/main.js" defer />
+          <script src="/_next/static/chunks/webpack.js" defer />
+        </Head>
       </body>
     </html>
   );

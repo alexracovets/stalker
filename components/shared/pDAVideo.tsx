@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import usePDA from '@/store/usePDA';
 
-export const PDA = () => {
+export const PDAVideo = () => {
     const router = useRouter();
     const videoRef = useRef<HTMLVideoElement>(null);
     const isPlay = usePDA(state => state.isPlay);

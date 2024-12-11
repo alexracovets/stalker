@@ -25,6 +25,9 @@ export default {
 					black: "#160F10",
 					white: "#EBEAE8",
 					white_opacity: "#ebeae83d",
+				},
+				main: {
+					black: "#11100E"
 				}
 			},
 			backgroundImage: {
