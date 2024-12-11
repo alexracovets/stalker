@@ -1,4 +1,5 @@
 export { InternetConnection } from './internetConnection';
+export { NavigationBgPDA } from './navigationBgPDA';
 export { StartNavigation } from './startNavigation';
 export { NavigationPDA } from './navigationPDA';
 export { CurrentTime } from './currentTime';
@@ -7,6 +8,5 @@ export { StartLinks } from './startLinks';
 export { DisplayPDA } from './displayPDA';
 export { HeaderPDA } from './headerPDA';
 export { FooterPDA } from './footerPDA';
-export { VideoPDA } from './videoPDA';
 export { BorderPDA } from './borderPDA';
- 
+export { VideoPDA } from './videoPDA';
