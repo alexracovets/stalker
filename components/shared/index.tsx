@@ -8,3 +8,5 @@ export { DisplayPDA } from './displayPDA';
 export { HeaderPDA } from './headerPDA';
 export { FooterPDA } from './footerPDA';
 export { VideoPDA } from './videoPDA';
+export { BorderPDA } from './borderPDA';
+ 
