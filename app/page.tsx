@@ -1,4 +1,6 @@
-import { StartNavigation, StartScreen } from "@/components/shared";
+"use client";
+
+import { PDA, StartNavigation, StartScreen } from "@/components/shared";
 
 export default function Home() {
   return (
@@ -7,6 +9,7 @@ export default function Home() {
     >
       <StartNavigation />
       <StartScreen />
+      <PDA />
     </div>
   );
 }

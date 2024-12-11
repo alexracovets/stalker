@@ -1,3 +1,4 @@
+"use client";
 
 import { StartLinks } from "@/components/shared";
 

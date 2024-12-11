@@ -1,7 +1,15 @@
-import { cn } from "@/lib/utils"
+"use client";
 
+import { cn } from "@/lib/utils";
+
+import usePDA from '@/store/usePDA';
 
 export const StartLinks = () => {
+    const setIsPlayPDA = usePDA(state => state.setIsPlay);
+
+    const openPDA = () => {
+        setIsPlayPDA(true);
+    };
 
     return (
         <ul
@@ -10,8 +18,10 @@ export const StartLinks = () => {
             {
                 links.map((link, idx) => {
                     return (
-                        <li key={idx}
+                        <li
+                            key={idx}
                             data-text={link.name}
+                            onClick={openPDA}
                             className={cn(
                                 "transition ease-in-out duration-300 before:transition before:ease-in-out before:duration-300 w-full cursor-pointer",
                                 "relative uppercase text-[3.2rem] text-center text-regular-white font-roboto_condensed font-[500] leading-[1.171875] clip_startBtn h-[4rem]",
