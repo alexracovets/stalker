@@ -7,7 +7,7 @@ interface ChildrenProps {
   children: React.ReactNode;
 }
 
-const AuthLayout = ({ children }: ChildrenProps) => {
+const PDALayout = ({ children }: ChildrenProps) => {
 
   return (
     <>
@@ -22,4 +22,4 @@ const AuthLayout = ({ children }: ChildrenProps) => {
   )
 }
 
-export default AuthLayout;
+export default PDALayout;

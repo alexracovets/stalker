@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 
 import { Button } from "@/components/ui";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export const NavigationPDA = () => {
     const [underlineStyles, setUnderlineStyles] = useState({ left: '0px', width: '0px' });
@@ -40,8 +41,22 @@ export const NavigationPDA = () => {
 
     return (
         <div
-            className="flex justify-center items-center bg-pda-black border-pda-border border-y-[.1rem] gap-x-[2.8rem]"
+            className="relative flex justify-center items-center bg-pda-black border-pda-border border-y-[.1rem] gap-x-[2.8rem]"
         >
+            <div className="absolute left-0 top-0">
+                <div
+                    className="relative w-[41rem] h-[8.8rem]"
+                >
+                    <Image src="/headerPDA/left_selection.png" fill alt="left" className="object-cover" />
+                </div>
+            </div>
+            <div className="absolute right-0 top-0">
+                <div
+                    className="relative w-[41rem] h-[8.8rem]"
+                >
+                    <Image src="/headerPDA/right_selection.png" fill alt="left" className="object-cover" />
+                </div>
+            </div>
             <Button variant="destructive">
                 <div className="leading-[1]">
                     Q
