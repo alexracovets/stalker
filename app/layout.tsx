@@ -1,6 +1,10 @@
+
+
 import { Roboto_Condensed, Roboto } from 'next/font/google';
 import localFont from "next/font/local";
 import type { Metadata } from "next";
+
+import { PDAVideo } from "@/components/shared";
 
 const roboto_condensed = Roboto_Condensed({
   weight: ["500", "600"],
@@ -55,6 +59,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         className={`${calibri.variable} ${stalker.variable} ${roboto_condensed.variable} ${roboto.variable} antialiased bg-main-black`}
       >
         {children}
+        <PDAVideo />
         <Head>
           <script src="/_next/static/chunks/main.js" defer />
           <script src="/_next/static/chunks/webpack.js" defer />

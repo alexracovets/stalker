@@ -17,7 +17,7 @@ export const HeaderPDA = () => {
                 <div
                     className="relative w-[164.7rem] h-[4.1rem]"
                 >
-                    <Image src="/headerPDA/top_header.png" fill alt="header top" className="object-cover" />
+                    <Image src="/headerPDA/top_header.png" fill priority alt="header top" className="object-cover" />
                 </div>
                 <div
                     className="w-[9.9rem] flex justify-center items-center gap-x-[.8rem]"

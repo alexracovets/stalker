@@ -1,6 +1,6 @@
 "use client";
 
-import { PDAVideo, StartNavigation, StartScreen } from "@/components/shared";
+import { StartNavigation, StartScreen } from "@/components/shared";
 
 export default function Home() {
 
@@ -8,7 +8,6 @@ export default function Home() {
     <main className="flex">
       <StartNavigation />
       <StartScreen />
-      <PDAVideo />
     </main>
   );
 }
