@@ -1,14 +1,17 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-
 import usePDA from '@/store/usePDA';
 
 export const PDA = () => {
+    const router = useRouter();
     const videoRef = useRef<HTMLVideoElement>(null);
     const isPlay = usePDA(state => state.isPlay);
+    const isOpenedPDA = usePDA(state => state.isOpen);
+
     const setIsPlay = usePDA(state => state.setIsPlay);
 
     const [isShow, setIsShow] = useState(false);
@@ -23,6 +26,7 @@ export const PDA = () => {
     };
 
     const handleVideoEnd = () => {
+        isOpenedPDA ? router.push("/pda") : router.push("/");
         setTimeout(() => {
             setIsPlay(false);
         }, 300);

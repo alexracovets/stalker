@@ -6,8 +6,10 @@ import usePDA from '@/store/usePDA';
 
 export const StartLinks = () => {
     const setIsPlayPDA = usePDA(state => state.setIsPlay);
+    const setIsOpenPDA = usePDA(state => state.setIsOpen);
 
     const openPDA = () => {
+        setIsOpenPDA(true);
         setIsPlayPDA(true);
     };
 
