@@ -13,6 +13,7 @@ export default {
 				calibri: ["var(--font-calibri)"],
 				stalker: ["var(--font-stalker)"],
 				roboto_condensed: ["var(--font-roboto_condensed)"],
+				roboto: ["var(--font-roboto)"],
 			},
 			colors: {
 				primary: {
@@ -28,6 +29,9 @@ export default {
 				},
 				main: {
 					black: "#11100E"
+				},
+				pda: {
+					white: "#A8A3A0"
 				}
 			},
 			backgroundImage: {

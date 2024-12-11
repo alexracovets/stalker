@@ -1,4 +1,4 @@
-import { Roboto_Condensed } from 'next/font/google';
+import { Roboto_Condensed, Roboto } from 'next/font/google';
 import localFont from "next/font/local";
 import type { Metadata } from "next";
 
@@ -8,7 +8,15 @@ const roboto_condensed = Roboto_Condensed({
   style: ['normal'],
   subsets: ['cyrillic'],
   display: 'swap',
-})
+});
+
+const roboto = Roboto({
+  weight: ["400"],
+  variable: '--font-roboto',
+  style: ['normal'],
+  subsets: ['cyrillic'],
+  display: 'swap',
+});
 
 const calibri = localFont({
   src: [
@@ -19,7 +27,7 @@ const calibri = localFont({
     }
   ],
   variable: "--font-calibri"
-})
+});
 
 const stalker = localFont({
   src: [
@@ -30,7 +38,7 @@ const stalker = localFont({
     }
   ],
   variable: "--font-stalker"
-})
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -44,7 +52,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html lang="uk">
       <body
-        className={`${calibri.variable} ${stalker.variable} ${roboto_condensed.variable} antialiased bg-main-black`}
+        className={`${calibri.variable} ${stalker.variable} ${roboto_condensed.variable} ${roboto.variable} antialiased bg-main-black`}
       >
         {children}
         <Head>
