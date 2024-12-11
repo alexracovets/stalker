@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { InternetConnection, CurrentTime } from "@/components/shared";
+import { InternetConnection, CurrentTime, NavigationPDA } from "@/components/shared";
 
 export const HeaderPDA = () => {
 
@@ -12,7 +12,7 @@ export const HeaderPDA = () => {
                 <div
                     className="w-[17.4rem] flex justify-center items-center gap-x-[.8rem]"
                 >
-                    <InternetConnection /> 
+                    <InternetConnection />
                 </div>
                 <div
                     className="relative w-[164.7rem] h-[4.1rem]"
@@ -25,6 +25,7 @@ export const HeaderPDA = () => {
                     <CurrentTime />
                 </div>
             </div>
+            <NavigationPDA />
         </header>
     )
 }

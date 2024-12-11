@@ -14,6 +14,7 @@ export default {
 				stalker: ["var(--font-stalker)"],
 				roboto_condensed: ["var(--font-roboto_condensed)"],
 				roboto: ["var(--font-roboto)"],
+				rethink: ["var(--font-rethink)"],
 			},
 			colors: {
 				primary: {
@@ -31,7 +32,20 @@ export default {
 					black: "#11100E"
 				},
 				pda: {
-					white: "#A8A3A0"
+					white: "#A8A3A0",
+					black: "#1D1C1A",
+					border: "#403E3C",
+					destructive: "#CABFB0",
+					links: "#7B7A78",
+					linksActive: "#BFBCB7"
+				},
+				gradient: {
+					colorOne: "#898883",
+					colorTwo: "#BFBEBA",
+					colorThree: "#C9C2B2"
+				},
+				gradientColorStopPositions: {
+					33: '33%',
 				}
 			},
 			backgroundImage: {

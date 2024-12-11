@@ -15,6 +15,11 @@ body {
   line-height: 1;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 html {
   min-height: 100dvh;
   max-height: 100dvh;
@@ -33,5 +38,9 @@ html {
     .clip_startBtn {
       clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     }
+  }
+
+  .bg-custom-gradient {
+    background: linear-gradient(to right, #898883, #BFBFBA, #C9C2B2, #BFBFBA, #898883);
   }
 }
