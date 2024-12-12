@@ -40,7 +40,8 @@ export default {
 					linksActive: "#BFBCB7",
 					display: "#14110F",
 					light_yellow: "#C2BDB7",
-					footer: "#1E1C1A"
+					footer: "#1E1C1A",
+					ico: "#1E1C19",
 				},
 				gradient: {
 					colorOne: "#898883",
