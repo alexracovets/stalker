@@ -5,9 +5,11 @@ import { useRef, useState } from "react";
 import { NavigationBgPDA } from "@/components/shared";
 import { Button } from "@/components/ui";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export const NavigationPDA = () => {
     const [underlineStyles, setUnderlineStyles] = useState({ left: '0px', width: '0px' });
+    const [shortlineStyles, setShortlineStyles] = useState({ left: '0px', width: '0px' });
     const menuRef = useRef<HTMLDivElement>(null);
 
     const links = [
@@ -31,10 +33,16 @@ export const NavigationPDA = () => {
     const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         const linkRect = e.currentTarget.getBoundingClientRect();
         const menuRect = menuRef.current?.getBoundingClientRect();
-        if (menuRect) {
+        const spanRect = e.currentTarget.querySelector('span')?.getBoundingClientRect();
+
+        if (menuRect && spanRect) {
             setUnderlineStyles({
                 left: `${linkRect.left - menuRect.left}px`,
                 width: `${linkRect.width}px`
+            });
+            setShortlineStyles({
+                left: `${spanRect.left - menuRect.left}px`,
+                width: `${spanRect.width}px`
             });
         }
     };
@@ -65,7 +73,9 @@ export const NavigationPDA = () => {
                                         )}
                                         onMouseEnter={handleMouseEnter}
                                     >
-                                        {link.name}
+                                        <span>
+                                            {link.name}
+                                        </span>
                                     </a>
                                 </li>
                             )
@@ -73,9 +83,35 @@ export const NavigationPDA = () => {
                     }
                 </ul>
                 <div
-                    className="absolute bottom-0 h-[0.3rem] w-[5rem] bg-custom-gradient transition-all ease-out duration-300"
+                    className={cn(
+                        "absolute bottom-[0] h-[1px] bg-custom-gradient transition-all ease-out duration-300 flex justify-center items-center",
+                    )}
                     style={underlineStyles}
-                />
+                >
+                    <div
+                        className={cn(
+                            "relative w-full h-full flex justify-center items-end"
+                        )}
+                    >
+                        <div className="relative w-[8.5rem] h-[2.5rem]">
+                            <Image src="/headerPDA/line_dot.png" fill alt="dot" className="object-cover" />
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="absolute bottom-[1px] h-[3px] bg-custom-gradient_second transition-all ease-out duration-300 flex justify-center items-center"
+                    style={shortlineStyles}
+                >
+                    <div
+                        className={cn(
+                            "relative w-full h-full flex justify-center items-end"
+                        )}
+                    >
+                        <div className="relative w-[4.4rem] h-[1.7rem] blur-[10px]">
+                            <Image src="/headerPDA/line_dot_small.png" fill alt="dot" className="object-cover" />
+                        </div>
+                    </div>
+                </div>
             </nav>
             <Button variant="destructive">
                 <div className="leading-[1]">

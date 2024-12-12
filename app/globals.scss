@@ -44,6 +44,10 @@ html {
   }
 
   .bg-custom-gradient {
-    background: linear-gradient(to right, #898883, #BFBFBA, #C9C2B2, #BFBFBA, #898883);
+    background: linear-gradient(to top, #898883, #BFBFBA, #C9C2B2, #BFBFBA, #898883);
+  }
+
+  .bg-custom-gradient_second {
+    background: linear-gradient(to top, #837F7C, #C9C2B2, #C9C2B2, #837F7C);
   }
 }

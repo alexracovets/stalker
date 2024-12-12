@@ -11,7 +11,6 @@ export const VideoPDA = () => {
     const router = useRouter();
     const videoRef = useRef<HTMLVideoElement>(null);
     const isPlay = usePDA(state => state.isPlay);
-    // const isOpenedPDA = usePDA(state => state.isOpen);
 
     const setIsPlay = usePDA(state => state.setIsPlay);
 
@@ -23,25 +22,29 @@ export const VideoPDA = () => {
     };
 
     const handleVideoEnd = () => {
-        console.log(1)
         router.push("/pda");
         setTimeout(() => {
             setIsPlay(false);
-        }, 300)
-
+        }, 300);
     };
 
     useEffect(() => {
-        if (isPlay) handleVideoPlay();
-    }, [isPlay]);
+        if (isPlay && videoRef) {
+            handleVideoPlay();
+        };
+    }, [isPlay, videoRef]);
 
     return (
         <AnimatePresence>
             {
                 isPlay &&
                 <motion.dialog
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ type: "spring" }}
                     className={cn(
-                        "absolute left-0 top-0 w-full h-screen flex items-center justify-center bg-black"
+                        "absolute left-0 top-0 w-full h-screen flex items-center justify-center"
                     )}
                 >
                     <video
