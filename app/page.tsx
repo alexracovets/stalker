@@ -1,13 +1,13 @@
 "use client";
 
-import { StartNavigation, StartScreen } from "@/components/shared";
+import { Initial, InitialVideo } from "@/components/shared/mainScreen";
 
 export default function Home() {
 
   return (
     <main className="flex">
-      <StartNavigation />
-      <StartScreen />
+      <Initial />
+      <InitialVideo />
     </main>
   );
 }

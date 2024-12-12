@@ -1,6 +1,7 @@
 "use client";
 
-import { HeaderPDA, BorderPDA, FooterPDA, MenuPDA } from "@/components/shared";
+import { BorderPDA, FooterPDA, MenuPDA } from "@/components/shared";
+import { PDAHeader } from "@/components/shared/pda/pdaHeader";
 import Image from "next/image";
 import React from "react";
 
@@ -12,7 +13,8 @@ const PDALayout = ({ children }: ChildrenProps) => {
 
   return (
     <>
-      <HeaderPDA />
+      <PDAHeader />
+      
       <div
         className="flex flex-col flex-grow pt-[.3rem] relative"
       >

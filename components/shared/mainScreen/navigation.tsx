@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 import usePDA from '@/store/usePDA';
 
-export const StartLinks = () => {
+export const Navigation = () => {
     const setIsPlayPDA = usePDA(state => state.setIsPlay);
     const setIsOpenPDA = usePDA(state => state.setIsOpen);
 

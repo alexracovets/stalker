@@ -12,6 +12,7 @@
   },
   "aliases": {
     "components": "@/components",
+    "startScreen": "@/components/shared/mainScreen",
     "utils": "@/lib/utils",
     "ui": "@/components/ui",
     "lib": "@/lib",
