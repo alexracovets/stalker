@@ -10,3 +10,4 @@ export { HeaderPDA } from './headerPDA';
 export { FooterPDA } from './footerPDA';
 export { BorderPDA } from './borderPDA';
 export { VideoPDA } from './videoPDA';
+export { MenuPDA } from './menuPDA';
