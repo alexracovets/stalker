@@ -38,16 +38,15 @@ export default {
 					destructive: "#CABFB0",
 					links: "#7B7A78",
 					linksActive: "#BFBCB7",
-					display: "#14110F"
+					display: "#14110F",
+					light_yellow: "#C2BDB7",
+					footer: "#1E1C1A"
 				},
 				gradient: {
 					colorOne: "#898883",
 					colorTwo: "#BFBEBA",
 					colorThree: "#C9C2B2"
 				},
-				gradientColorStopPositions: {
-					33: '33%',
-				}
 			},
 			backgroundImage: {
 				'start-pattern': "url('/btn/startBtnTexture.png')"
