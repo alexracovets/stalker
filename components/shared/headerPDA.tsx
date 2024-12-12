@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import { InternetConnection, CurrentTime, NavigationPDA } from "@/components/shared";

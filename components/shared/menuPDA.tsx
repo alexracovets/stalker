@@ -1,4 +1,8 @@
-import Image from "next/image"
+"use client";
+
+import Image from "next/image";
+
+import { MenuPDANavigation } from "@/components/shared";
 
 export const MenuPDA = () => {
 
@@ -15,6 +19,8 @@ export const MenuPDA = () => {
                     <Image src="/pda/border/vertical_center.jpg" fill alt="center" className="object-cover" />
                 </div>
             </div>
+
+            <MenuPDANavigation />
         </div>
     )
 }

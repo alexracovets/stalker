@@ -1,4 +1,5 @@
 export { InternetConnection } from './internetConnection';
+export { MenuPDANavigation } from './menuPDANavigation';
 export { NavigationBgPDA } from './navigationBgPDA';
 export { StartNavigation } from './startNavigation';
 export { NavigationPDA } from './navigationPDA';
