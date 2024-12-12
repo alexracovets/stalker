@@ -3,7 +3,7 @@ import { Button } from "@/components/ui";
 export const FooterPDA = () => {
     return (
         <footer
-            className="p-[1rem] w-full flex justify-between items-center gap-x-[27.8rem]"
+            className="p-[1rem] w-full flex justify-start items-center gap-x-[27.8rem]"
         >
             <div
                 className="flex justify-start items-center gap-x-[1.6rem]  bg-footer p-[2rem]"

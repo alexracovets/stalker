@@ -44,7 +44,7 @@ export const VideoPDA = () => {
                     exit={{ opacity: 0 }}
                     transition={{ type: "spring" }}
                     className={cn(
-                        "absolute left-0 top-0 w-full h-screen flex items-center justify-center"
+                        "absolute left-0 top-0 w-full h-screen flex items-center justify-center bg-pda-black"
                     )}
                 >
                     <video

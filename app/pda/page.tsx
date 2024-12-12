@@ -1,10 +1,10 @@
-"use client";
-
-import { DisplayPDA } from "@/components/shared";
+"use client"; 
 
 export default function PDA() {
 
   return (
-    <DisplayPDA />
+    <>
+
+    </>
   );
 }
