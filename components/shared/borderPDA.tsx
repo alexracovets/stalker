@@ -20,14 +20,14 @@ export const BorderPDA = () => {
                     <Image src="/pda/border/bottom.jpg" fill alt="bottom" className="object-cover" />
                 </div>
             </div>
-            <div className="absolute left-0 top-0 w-[.9rem] h-full z-[-1]">
+            <div className="absolute left-0 top-0 w-[.9rem] h-full">
                 <div
                     className="relative w-full h-full"
                 >
                     <Image src="/pda/border/left.jpg" fill alt="left" className="object-cover" />
                 </div>
             </div>
-            <div className="absolute right-0 top-0 w-[.9rem] h-full z-[-1]">
+            <div className="absolute right-0 top-0 w-[.9rem] h-full">
                 <div
                     className="relative w-full h-full"
                 >
