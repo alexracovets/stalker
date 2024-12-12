@@ -11,26 +11,10 @@ interface ItemType {
 
 interface HeaderLinksDashType {
     styles: {
-        underline: {
-            left: string,
-            width: string
-        },
-        shortline: {
-            left: string,
-            width: string
-        }
+        underline: ItemType,
+        shortline: ItemType
     }
 }
-
-const Line = ({ style, imgSrc, imgClass }: { style: ItemType, imgSrc: string, imgClass: string }) => (
-    <div className="absolute bottom-0 transition-all ease-out duration-300" style={style}>
-        <div className="relative w-full h-full flex justify-center items-end">
-            <div className={imgClass}>
-                <Image src={imgSrc} fill alt="dot" className="object-cover" />
-            </div>
-        </div>
-    </div>
-);
 
 export const HeaderLinksDash = ({ styles }: HeaderLinksDashType) => {
 
