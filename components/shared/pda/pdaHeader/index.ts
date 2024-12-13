@@ -4,6 +4,7 @@ export { HeaderNavigation } from './headerNavigation';
 export { HeaderLinksDash } from './headerLinksDash';
 export { HeaderLinksList } from './headerLinksList';
 export { HeaderInternet } from './headerInternet';
+export { HeaderLink } from './headerLink';
 export { HeaderTime } from './headerTime';
 export { HeaderPlug } from './headerPlug';
 export { PDAHeader } from './pdaHeader';

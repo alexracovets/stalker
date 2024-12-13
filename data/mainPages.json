@@ -1,26 +1,32 @@
 [
     {
         "name": "Захист",
-        "route": "/pda/protects"
+        "route": "/pda/protects",
+        "id": "protects"
     },
     {
         "name": "Зброя",
-        "route": "/pda/weapons"
+        "route": "/pda/weapons",
+        "id": "weapons"
     },
     {
         "name": "Зона",
-        "route": "/pda/zone"
+        "route": "/pda/zone",
+        "id": "zone"
     },
     {
         "name": "Угруповання",
-        "route": "/pda/groups"
+        "route": "/pda/groups",
+        "id": "groups"
     },
     {
         "name": "Поради",
-        "route": "/pda/advice"
+        "route": "/pda/advice",
+        "id": "advice"
     },
     {
         "name": "Екіпіруватись",
-        "route": "/pda/equip"
+        "route": "/pda/equip",
+        "id": "equip"
     }
 ]

@@ -13,13 +13,19 @@ interface HeaderLinksDashType {
     styles: {
         underline: ItemType,
         shortline: ItemType
-    }
+    },
+    isHidenDash: boolean
 }
 
-export const HeaderLinksDash = ({ styles }: HeaderLinksDashType) => {
+export const HeaderLinksDash = ({ styles, isHidenDash }: HeaderLinksDashType) => {
 
     return (
-        <div className="relative">
+        <div
+            className={cn(
+                "relative transition-opacity ease-out duration-300 select-none pointer-events-none",
+                isHidenDash ? "opacity-0" : "opacity-1"
+            )}
+        >
             <div
                 className={cn(
                     "absolute bottom-[0] h-[.15rem] bg-custom-gradient transition-all ease-out duration-300 flex justify-center items-center"
