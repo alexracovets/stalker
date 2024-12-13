@@ -1,27 +1,7 @@
 "use client";
 
+import links from "@/data/mainPages.json";
 import { cn } from "@/lib/utils";
-
-const links = [
-    {
-        name: "Захист"
-    },
-    {
-        name: "Зброя"
-    },
-    {
-        name: "Зона"
-    },
-    {
-        name: "Угруповання"
-    },
-    {
-        name: "Поради"
-    },
-    {
-        name: "Екіпіруватись"
-    }
-]
 
 interface HeaderLinksListType {
     handleMouseEnter: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;

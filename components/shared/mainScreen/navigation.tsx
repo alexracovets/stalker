@@ -4,6 +4,8 @@ import { cn } from "@/lib/utils";
 
 import usePDA from '@/store/usePDA';
 
+import links from "@/data/mainPages.json";
+
 export const Navigation = () => {
     const setIsPlayPDA = usePDA(state => state.setIsPlay);
     const setIsOpenPDA = usePDA(state => state.setIsOpen);
@@ -41,31 +43,3 @@ export const Navigation = () => {
         </ul>
     )
 }
-
-const links = [
-    {
-        name: "Захист",
-        to: ""
-    },
-    {
-        name: "Зброя",
-        to: ""
-    },
-    {
-        name: "Зона",
-        to: ""
-    },
-    {
-        name: "Угруповання",
-        to: ""
-    },
-    {
-        name: "Поради",
-        to: ""
-    },
-    {
-        name: "Екіпіруватись",
-        to: ""
-    }
-
-]
