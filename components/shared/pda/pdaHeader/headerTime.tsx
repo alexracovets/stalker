@@ -1,7 +1,8 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
+
+import { cn } from "@/lib/utils";
 
 export const HeaderTime = () => {
     const [currentTime, setCurrentTime] = useState<string>("00:00");
