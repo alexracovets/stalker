@@ -1,26 +1,26 @@
 [
     {
         "name": "Захист",
-        "route": "/protects"
+        "route": "/pda/protects"
     },
     {
         "name": "Зброя",
-        "route": "/weapons"
+        "route": "/pda/weapons"
     },
     {
         "name": "Зона",
-        "route": "/zone"
+        "route": "/pda/zone"
     },
     {
         "name": "Угруповання",
-        "route": "/groups"
+        "route": "/pda/groups"
     },
     {
         "name": "Поради",
-        "route": "/advice"
+        "route": "/pda/advice"
     },
     {
         "name": "Екіпіруватись",
-        "route": "/equip"
+        "route": "/pda/equip"
     }
 ]

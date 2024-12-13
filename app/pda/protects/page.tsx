@@ -1,13 +1,13 @@
 "use client";
 
-export default function PDA() {
+export default function Protects() {
 
   return (
     <div>
       <h1
         className="text-[3.4rem] leading-[3.984rem] font-roboto_condensed font-[500]"
       >
-        Сторінка PDA
+        Сторінка Захист
       </h1>
     </div>
   );

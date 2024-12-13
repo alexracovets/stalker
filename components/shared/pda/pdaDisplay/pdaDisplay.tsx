@@ -7,7 +7,7 @@ interface displayType {
 export const PDADisplay = ({ children }: displayType) => {
 
     return (
-        <main className="flex-grow">
+        <main className="flex-grow text-pda-destructive p-[3.2rem] pt-[4.2rem]">
             {children}
         </main>
     )

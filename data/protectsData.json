@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Костюми",
+        "route": "/protects/armors",
+        "image": "",
+        "list": [
+            {
+                "name": "Шкіряна куртка",
+                "weight": 2.0,
+                "artifacts_slot": 1,
+                "info": [
+                    "Звичайна куртка. Забезпечує основний захист від дощу, холоду та, можливо, укусів щурів. Будь-яка стійкість проти радіації чи аномалій залишається прекрасною мрією."
+                ],
+                "protections": {
+                    "thermal": 0.3,
+                    "electrical": 0.3,
+                    "chemical": 0.3,
+                    "radiation": 0.5,
+                    "psi": 0,
+                    "physical": 0.8
+                }
+            }
+        ]
+    },
+    {
+        "name": "Маски",
+        "route": "/protects/masks"
+    },
+    {
+        "name": "Комбінована броня",
+        "route": "/protects/combo_armors"
+    }
+]

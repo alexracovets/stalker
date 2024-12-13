@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import links from "@/data/mainPages.json";
 import { cn } from "@/lib/utils";
 
@@ -15,7 +17,7 @@ export const HeaderLinksList = ({ handleMouseEnter }: HeaderLinksListType) => {
                 links.map((link, idx) => {
                     return (
                         <li key={idx}>
-                            <a
+                            <Link href={link.route}
                                 onMouseEnter={handleMouseEnter}
                                 className={cn(
                                     "block text-[2.5rem] text-pda-links font-roboto_condensed py-[3.2rem] px-[3rem] cursor-pointer",
@@ -24,7 +26,7 @@ export const HeaderLinksList = ({ handleMouseEnter }: HeaderLinksListType) => {
 
                             >
                                 <span>{link.name}</span>
-                            </a>
+                            </Link>
                         </li>
                     )
                 })
