@@ -26,7 +26,7 @@ export const PDAMenuNavigation = () => {
     ];
 
     return (
-        <div className="flex justify-center items-center w-full pt-[2.5rem] pb-[1.4rem] px-[1.9rem] gap-x-[1.8rem]">
+        <div className="flex justify-center items-center w-full pt-[2.5rem] pb-[1.4rem] gap-x-[1.8rem]">
             <Button variant="destructive">A</Button>
             <ul className="flex justify-center items-center gap-x-[1.2rem]">
                 {nav.map((item, idx) => (

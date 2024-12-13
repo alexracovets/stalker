@@ -22,7 +22,7 @@ export const HeaderLinksDash = ({ styles }: HeaderLinksDashType) => {
         <div className="relative">
             <div
                 className={cn(
-                    "absolute bottom-[0] h-[1px] bg-custom-gradient transition-all ease-out duration-300 flex justify-center items-center"
+                    "absolute bottom-[0] h-[.15rem] bg-custom-gradient transition-all ease-out duration-300 flex justify-center items-center"
                 )}
                 style={styles.underline}
             >
@@ -33,11 +33,11 @@ export const HeaderLinksDash = ({ styles }: HeaderLinksDashType) => {
                 </div>
             </div>
             <div
-                className="absolute bottom-[1px] h-[3px] bg-custom-gradient_second transition-all ease-out duration-300 flex justify-center items-center"
+                className="absolute bottom-[.15rem] h-[.3rem] bg-custom-gradient_second transition-all ease-out duration-300 flex justify-center items-center"
                 style={styles.shortline}
             >
                 <div className="relative w-full h-full flex justify-center items-end">
-                    <div className="relative w-[4.4rem] h-[1.7rem] blur-[10px]">
+                    <div className="relative w-[4.4rem] h-[1.7rem] blur-[1rem]">
                         <Image src="/headerPDA/line_dot_small.png" fill alt="dot" className="object-cover" />
                     </div>
                 </div>
