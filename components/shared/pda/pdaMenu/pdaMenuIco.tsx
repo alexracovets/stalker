@@ -7,7 +7,7 @@ interface MenuPDANavigationIcoProps {
     Icon: FC<{ color: string }>;
 }
 
-export const MenuPDANavigationIco = ({ Icon }: MenuPDANavigationIcoProps) => {
+export const PDAMenuIco = ({ Icon }: MenuPDANavigationIcoProps) => {
     const [hover, setHover] = useState(false);
     const defaultColor = "#AFAC99";
     const hoverColor = "#3F3830";
@@ -24,7 +24,9 @@ export const MenuPDANavigationIco = ({ Icon }: MenuPDANavigationIcoProps) => {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
-            <Icon color={hover ? hoverColor : defaultColor} />
+            <div className="w-[3.2rem] h-[3.2rem]">
+                <Icon color={hover ? hoverColor : defaultColor} />
+            </div>
         </li>
     );
 };

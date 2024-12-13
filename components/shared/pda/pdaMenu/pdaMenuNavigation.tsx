@@ -1,10 +1,11 @@
 "use client";
 
-import { Button } from "@/components/ui";
 import { ArmorIco, ListIco, MaskIco, DevicesIco } from "@/components/svg";
-import { MenuPDANavigationIco } from "../element/menuPDANavigationIco";
+import { PDAMenuIco } from "@/components/shared/pda/pdaMenu";
+import { Button } from "@/components/ui";
 
-export const MenuPDANavigation = () => {
+export const PDAMenuNavigation = () => {
+
     const nav = [
         {
             ico: ListIco,
@@ -26,20 +27,16 @@ export const MenuPDANavigation = () => {
 
     return (
         <div className="flex justify-center items-center w-full pt-[2.5rem] pb-[1.4rem] px-[1.9rem] gap-x-[1.8rem]">
-            <Button variant="destructive">
-                <div className="leading-[1]">A</div>
-            </Button>
+            <Button variant="destructive">A</Button>
             <ul className="flex justify-center items-center gap-x-[1.2rem]">
                 {nav.map((item, idx) => (
-                    <MenuPDANavigationIco
+                    <PDAMenuIco
                         key={idx}
                         Icon={item.ico}
                     />
                 ))}
             </ul>
-            <Button variant="destructive">
-                <div className="leading-[1]">D</div>
-            </Button>
+            <Button variant="destructive">D</Button>
         </div>
-    );
-};
+    )
+}

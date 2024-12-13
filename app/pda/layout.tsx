@@ -1,9 +1,12 @@
 "use client";
 
-import { BorderPDA, FooterPDA, MenuPDA } from "@/components/shared";
-import { PDAHeader } from "@/components/shared/pda/pdaHeader";
-import Image from "next/image";
 import React from "react";
+
+import { PDAFooter } from "@/components/shared/pda/pdaFooter/pdaFooter";
+import { PDADisplay } from "@/components/shared/pda/pdaDisplay";
+import { PDAHeader } from "@/components/shared/pda/pdaHeader";
+import { PDAMenu } from "@/components/shared/pda/pdaMenu";
+import { PDAMainBorder } from "@/components/shared/pda";
 
 interface ChildrenProps {
   children: React.ReactNode;
@@ -14,28 +17,14 @@ const PDALayout = ({ children }: ChildrenProps) => {
   return (
     <>
       <PDAHeader />
-      
-      <div
-        className="flex flex-col flex-grow pt-[.3rem] relative"
-      >
-        <main
-          className="relative flex bg-pda-display flex-grow z-0"
-        >
-          <div className="absolute bottom-0 left-0 w-full h-[.8rem]">
-            <div className="relative w-full h-full">
-              <Image src="/pda/border/horizontal_center.jpg" fill alt="center" className="object-cover" />
-            </div>
-          </div>
-          <MenuPDA />
-          <div
-            className="flex-grow h-full"
-          >
-            {children}
-          </div>
-        </main>
-        <FooterPDA />
-        <BorderPDA />
+      <div className="flex justify-between w-full flex-grow relative">
+        <PDAMainBorder />
+        <PDAMenu />
+        <PDADisplay>
+          {children}
+        </PDADisplay>
       </div>
+      <PDAFooter />
     </>
   )
 }

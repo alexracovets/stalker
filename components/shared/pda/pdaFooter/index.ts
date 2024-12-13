@@ -1,0 +1,1 @@
+export { PDAFooterBorder } from './pdaFooterBorder';
