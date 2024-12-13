@@ -25,7 +25,7 @@ export const HeaderTime = () => {
     }, []);
 
     return (
-        <div className="w-[9.9rem] flex justify-center items-center gap-x-[.8rem] select-none">
+        <div className="w-[9.9rem] flex justify-center items-center gap-x-[.8rem]">
             <div className={cn(
                 "text-[1.6rem] text-pda-white font-roboto transition-opacity ease-in-out duration-300",
                 isActive ? "opacity-1" : "opacity-0"

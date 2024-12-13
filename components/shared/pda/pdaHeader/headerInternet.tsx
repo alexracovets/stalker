@@ -26,7 +26,7 @@ export const HeaderInternet = () => {
     }, []);
 
     return (
-        <div className="w-[17.4rem] flex justify-center items-center gap-x-[.8rem] select-none">
+        <div className="w-[17.4rem] flex justify-center items-center gap-x-[.8rem]">
             <div className="relative w-[1.4rem] h-[1.4rem]">
                 <div className="flex justify-center items-end h-[1.4rem] gap-x-[.1rem]">
                     <div className={cn("w-[0.25rem] bg-[#A8A3A0] transition-all ease-in-out duration-500 delay-0", isOnline ? "h-[30%]" : "h-[0%]")} />
