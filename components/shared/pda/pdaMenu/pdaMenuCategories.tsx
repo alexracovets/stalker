@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui";
 import { PDAMenuIco } from "@/components/shared/pda/pdaMenu";
@@ -14,9 +15,15 @@ interface propType {
 export const PDAMenuCategories = ({ navCategories }: propType) => {
     const [api, setApi] = useState<CarouselApi>();
     const [activeIndex, setActiveIndex] = useState<number>(0);
+    const router = useRouter();
 
-    const categoryClick = (to: number) => {
-        if (api) { api.scrollTo(to); };
+    const categoryClick = (to: number, route: string | false) => {
+        if (api) {
+            api.scrollTo(to);
+            if (route) {
+                router.push(route);
+            }
+        };
     }
 
     useEffect(() => {
@@ -39,7 +46,7 @@ export const PDAMenuCategories = ({ navCategories }: propType) => {
             <CarouselContent className="min-h-[5rem]">
                 {navCategories.map((item, idx) => {
                     return (
-                        <CarouselItem key={idx} className="basis-1/4" onClick={() => categoryClick(idx)}>
+                        <CarouselItem key={idx} className="basis-1/4" onClick={() => categoryClick(idx, item.route)}>
                             <PDAMenuIco Icon={item.ico} active={activeIndex === idx} />
                         </CarouselItem>
                     )
