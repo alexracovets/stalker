@@ -14,7 +14,7 @@ export const PDAMenuIco = ({ Icon, active }: IconCategoryType) => {
         <li
             className={
                 cn(
-                    "flex justify-center items-center w-[8.5rem] h-[5rem] bg-pda-ico rounded-[.4rem] cursor-pointer",
+                    "flex justify-center items-center w-full h-[5rem] bg-pda-ico rounded-[.4rem] cursor-pointer",
                     "transition duration-300",
                     active || hover ? "bg-pda-destructive" : "bg-pda-ico"
                 )
