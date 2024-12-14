@@ -13,7 +13,14 @@
         "name": "Зброя",
         "route": "/pda/weapons",
         "id": "weapons",
-        "categories": []
+        "categories": [
+            "pistols",
+            "automatics",
+            "shotguns",
+            "rpgs",
+            "grenades",
+            "ammo"
+        ]
     },
     {
         "name": "Зона",
