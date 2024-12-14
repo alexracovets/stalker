@@ -1,6 +1,23 @@
 [
     {
-        "name": "",
-        "route": ""
+        "name": "leather_jacket",
+        "parent_route": "weapons",
+        "title": "Шкіряна куртка",
+        "type": "Броня",
+        "image": "items/protects/armors/leather_jacket.png",
+        "weight": 2,
+        "artifacts_slot": "",
+        "price": 11252,
+        "info": [
+            "Звичайна куртка. Забезпечує основний захист від дощу, холоду та, можливо, укусів щурів. Будь-яка стійкість проти радіації чи аномалій залишається прекрасною мрією."
+        ],
+        "protections": {
+            "thermal": 0.3,
+            "electric": 0.3,
+            "chimical": 0.3,
+            "radiation": 0.5,
+            "psi": 0,
+            "physical": 0.8
+        }
     }
 ]

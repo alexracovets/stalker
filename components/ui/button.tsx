@@ -5,14 +5,13 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "flex justify-center items-center",
+  "flex justify-center items-center cursor-pointer",
   {
     variants: {
       variant: {
         default: "",
         destructive: cn(
           "text-[2.5rem] font-rethink font-[800] w-[3.6rem] h-[3.6rem] border-[.1rem] border-primary-black rounded-[.4rem] bg-pda-destructive bg-[url('/btn/destructiveTexture.png')] bg-contain sepia leading-[0]",
-        
         ),
         outline:
           "",

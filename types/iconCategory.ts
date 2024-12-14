@@ -1,5 +1,6 @@
 import { FC } from "react";
 
 export interface IconCategoryType {
-    Icon: FC<{ color: string }>
+    Icon: FC<{ color: string }>,
+    active: boolean
 }
