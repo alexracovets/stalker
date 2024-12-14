@@ -1,13 +1,11 @@
 "use client";
 
+import { useState } from "react";
+
+import { IconCategoryType } from "@/types";
 import { cn } from "@/lib/utils";
-import { useState, FC } from "react";
 
-interface MenuPDANavigationIcoProps {
-    Icon: FC<{ color: string }>;
-}
-
-export const PDAMenuIco = ({ Icon }: MenuPDANavigationIcoProps) => {
+export const PDAMenuIco = ({ Icon }: IconCategoryType) => {
     const [hover, setHover] = useState(false);
     const defaultColor = "#AFAC99";
     const hoverColor = "#3F3830";

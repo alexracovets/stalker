@@ -58,6 +58,10 @@ export const HeaderNavigationLinks = () => {
         }
     }, [mainSection]);
 
+    useEffect(() => {
+        handleMouseLeave();
+    }, [mainSection, handleMouseLeave]);
+
     return (
         <nav ref={menuRef} className="relative" onPointerLeave={handleMouseLeave}>
             <HeaderLinksList handleMouseEnter={handleMouseEnter} />

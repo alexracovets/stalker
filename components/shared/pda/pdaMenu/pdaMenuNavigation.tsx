@@ -1,35 +1,20 @@
 "use client";
 
-import { ArmorIco, ListIco, MaskIco, DevicesIco } from "@/components/svg";
-import { PDAMenuIco } from "@/components/shared/pda/pdaMenu";
+import { useState } from "react";
+
+import { PDAMenuIco, CheckMenuPages } from "@/components/shared/pda/pdaMenu";
 import { Button } from "@/components/ui";
+import { CategoryType } from "@/types";
 
 export const PDAMenuNavigation = () => {
-
-    const nav = [
-        {
-            ico: ListIco,
-            name: "list"
-        },
-        {
-            ico: ArmorIco,
-            name: "armors"
-        },
-        {
-            ico: MaskIco,
-            name: "masks"
-        },
-        {
-            ico: DevicesIco,
-            name: "divices"
-        }
-    ];
+    const [navCategories, setNavCategories] = useState<CategoryType[]>([]);
 
     return (
         <div className="flex justify-center items-center w-full pt-[2.5rem] pb-[1.4rem] gap-x-[1.8rem]">
+            <CheckMenuPages setNavCategories={setNavCategories} />
             <Button variant="destructive">A</Button>
-            <ul className="flex justify-center items-center gap-x-[1.2rem]">
-                {nav.map((item, idx) => (
+            <ul className="flex justify-start items-center gap-x-[1.2rem] w-full max-w-[37.6rem]">
+                {navCategories.map((item, idx) => (
                     <PDAMenuIco
                         key={idx}
                         Icon={item.ico}

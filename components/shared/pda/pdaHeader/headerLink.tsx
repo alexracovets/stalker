@@ -23,7 +23,7 @@ export const HeaderLink = ({ name, route, id, handleMouseEnter }: HeaderLinksLis
         if (pathname.includes(route)) {
             setMainSection(id);
         }
-    }, [pathname]);
+    }, [pathname, route, id, setMainSection]);
 
     return (
         <li>
