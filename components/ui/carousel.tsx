@@ -202,8 +202,7 @@ const CarouselPrevious = React.forwardRef<
       ref={ref}
       variant={variant}
       className={cn(
-        "absolute",
-        "left-0 top-1/2 translate-x-[calc(-100%-1.6rem)] -translate-y-1/2",
+        "absolute left-0 top-1/2 translate-x-[calc(-100%-1.6rem)] -translate-y-1/2",
         className
       )}
       disabled={!canScrollPrev}
@@ -225,8 +224,7 @@ const CarouselNext = React.forwardRef<
       ref={ref}
       variant={variant}
       className={cn(
-        "absolute z-[1]",
-        "right-0 top-1/2 translate-x-[calc(100%+1.6rem)] -translate-y-1/2",
+        "absolute right-0 top-1/2 translate-x-[calc(100%+1.6rem)] -translate-y-1/2",
         className
       )}
       disabled={!canScrollNext}
