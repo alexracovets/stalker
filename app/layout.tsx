@@ -58,7 +58,6 @@ export const metadata: Metadata = {
 };
 
 import "./globals.scss";
-import Head from 'next/head';
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
@@ -68,10 +67,6 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
       >
         {children}
         <VideoPDA />
-        <Head>
-          <script src="/_next/static/chunks/main.js" defer />
-          <script src="/_next/static/chunks/webpack.js" defer />
-        </Head>
       </body>
     </html>
   );
