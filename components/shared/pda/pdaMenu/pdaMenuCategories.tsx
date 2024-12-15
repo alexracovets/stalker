@@ -7,7 +7,6 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 import { PDAMenuIco } from "@/components/shared/pda/pdaMenu";
 import { CarouselApi } from "@/components/ui/carousel";
 import { CategoryType } from "@/types";
-import { cn } from "@/lib/utils";
 
 interface propType {
     navCategories: CategoryType[]
@@ -19,14 +18,24 @@ export const PDAMenuCategories = ({ navCategories }: propType) => {
     const router = useRouter();
     const duplicatedCategories = [...navCategories, ...navCategories];
 
+    const routeTo = (to: string) => {
+        router.push(to);
+    }
+
     const categoryClick = (to: number, route: string | false) => {
         if (api) {
             api.scrollTo(to);
-            if (route) {
-                router.push(route);
-            }
         };
     }
+
+    useEffect(() => {
+        const correctedIndex = activeIndex % navCategories.length;
+        const route = navCategories[correctedIndex]?.route;
+
+        if (route) {
+            routeTo(route);
+        }
+    }, [activeIndex, navCategories]);
 
     useEffect(() => {
         if (api) {
@@ -51,17 +60,15 @@ export const PDAMenuCategories = ({ navCategories }: propType) => {
                         <CarouselItem
                             key={idx}
                             onClick={() => categoryClick(idx, item.route)}
-                            className={cn(
-                                navCategories.length <= 4 ? `basis-1/${navCategories.length === 1 ? 2 : navCategories.length - 1}` : "basis-1/4"
-                            )}
+                            className="basis-1/4"
                         >
                             <PDAMenuIco Icon={item.ico} active={activeIndex === idx} />
                         </CarouselItem>
                     )
                 })}
             </CarouselContent>
-            <CarouselPrevious>A</CarouselPrevious>
-            <CarouselNext>D</CarouselNext>
+            <CarouselPrevious data-menu_pda-previous>A</CarouselPrevious>
+            <CarouselNext data-menu_pda-next>D</CarouselNext>
         </Carousel>
     )
 }

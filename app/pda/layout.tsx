@@ -3,10 +3,10 @@
 import React from "react";
 
 import { PDAFooter } from "@/components/shared/pda/pdaFooter/pdaFooter";
+import { PDAMainBorder, PDAKeyControl } from "@/components/shared/pda";
 import { PDADisplay } from "@/components/shared/pda/pdaDisplay";
 import { PDAHeader } from "@/components/shared/pda/pdaHeader";
 import { PDAMenu } from "@/components/shared/pda/pdaMenu";
-import { PDAMainBorder } from "@/components/shared/pda";
 
 interface ChildrenProps {
   children: React.ReactNode;
@@ -25,6 +25,7 @@ const PDALayout = ({ children }: ChildrenProps) => {
         </PDADisplay>
       </div>
       <PDAFooter />
+      <PDAKeyControl />
     </>
   )
 }
