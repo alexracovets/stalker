@@ -17,6 +17,9 @@ export const PDAKeyControl = () => {
                 case "KeyE":
                     (document.querySelector("[data-pda-next]") as HTMLElement)?.click();
                     break;
+                case "KeyX":
+                    (document.querySelector("[data-to-main-page]") as HTMLElement)?.click();
+                    break;
                 default:
                     break;
             }

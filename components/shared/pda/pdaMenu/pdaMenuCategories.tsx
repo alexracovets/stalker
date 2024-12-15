@@ -22,7 +22,7 @@ export const PDAMenuCategories = ({ navCategories }: propType) => {
         router.push(to);
     }
 
-    const categoryClick = (to: number, route: string | false) => {
+    const categoryClick = (to: number) => {
         if (api) {
             api.scrollTo(to);
         };
@@ -59,7 +59,7 @@ export const PDAMenuCategories = ({ navCategories }: propType) => {
                     return (
                         <CarouselItem
                             key={idx}
-                            onClick={() => categoryClick(idx, item.route)}
+                            onClick={() => categoryClick(idx)}
                             className="basis-1/4"
                         >
                             <PDAMenuIco Icon={item.ico} active={activeIndex === idx} />
