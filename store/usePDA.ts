@@ -4,7 +4,7 @@ import { immer } from 'zustand/middleware/immer';
 interface PDA_Type {
     isOpen: boolean;
     isPlay: boolean;
-    mainSection: string | -1;
+    mainSection: string;
     setIsOpen: (value: boolean) => void;
     setIsPlay: (value: boolean) => void;
     setMainSection: (value: string) => void;
@@ -14,7 +14,7 @@ const usePDA = create<PDA_Type>()(
     immer((set) => ({
         isOpen: false,
         isPlay: false,
-        mainSection: -1,
+        mainSection: "",
         setIsOpen: (value) =>
             set((state) => {
                 state.isOpen = value;
