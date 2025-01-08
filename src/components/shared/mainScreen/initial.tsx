@@ -1,6 +1,6 @@
 "use client";
 
-import { Logo, Info, Navigation } from "@/src/components/shared/mainScreen";
+import { Logo, Info, Navigation } from "@/components/shared/mainScreen";
 
 export const Initial = () => {
 	return (
