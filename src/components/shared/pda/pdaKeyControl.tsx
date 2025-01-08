@@ -1,33 +1,29 @@
 import { useEffect } from "react";
 
 export const PDAKeyControl = () => {
+	useEffect(() => {
+		// Маппинг клавиш на действия
+		const keyMap: Record<string, string> = {
+			KeyA: "[data-menu_pda-previous]",
+			KeyD: "[data-menu_pda-next]",
+			KeyQ: "[data-pda-previous]",
+			KeyE: "[data-pda-next]",
+			KeyX: "[data-to-main-page]",
+		};
 
-    useEffect(() => {
-        const handleKeyDown = (e: KeyboardEvent) => {
-            switch (e.code) {
-                case "KeyA":
-                    (document.querySelector("[data-menu_pda-previous]") as HTMLElement)?.click();
-                    break;
-                case "KeyD":
-                    (document.querySelector("[data-menu_pda-next]") as HTMLElement)?.click();
-                    break;
-                case "KeyQ":
-                    (document.querySelector("[data-pda-previous]") as HTMLElement)?.click();
-                    break;
-                case "KeyE":
-                    (document.querySelector("[data-pda-next]") as HTMLElement)?.click();
-                    break;
-                case "KeyX":
-                    (document.querySelector("[data-to-main-page]") as HTMLElement)?.click();
-                    break;
-                default:
-                    break;
-            }
-        };
+		const handleKeyDown = (e: KeyboardEvent) => {
+			const selector = keyMap[e.code];
+			if (selector) {
+				const element = document.querySelector(selector) as HTMLElement;
+				element?.click();
+			}
+		};
 
-        window.addEventListener("keydown", handleKeyDown);
-        return () => window.removeEventListener("keydown", handleKeyDown);
-    }, []);
+		window.addEventListener("keydown", handleKeyDown);
 
-    return null;
-}
+		// Очистка события при размонтировании компонента
+		return () => window.removeEventListener("keydown", handleKeyDown);
+	}, []);
+
+	return null;
+};
