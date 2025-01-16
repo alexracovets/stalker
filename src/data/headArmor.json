@@ -1,0 +1,202 @@
+[
+	{
+		"name": "pg-4_facehugger_gas_mask",
+		"parent_route": "weapons",
+		"title": "Протигаз ПГ-4 Facehugger",
+		"type": "Маска",
+		"image": "items/protects/head/pg-4_facehugger_gas_mask.png",
+		"weight": 2,
+		"price": 7125,
+		"info": [
+			"Вінтажний протигаз цивільної оборони, спеціально модифікований, щоб витримати суворі умови Зони. Маска отримала своє прізвисько через посилену внутрішню раму, яка злегка стискає обличчя користувача."
+		],
+		"protections": {
+			"thermal": 0.8,
+			"electric": 1,
+			"chimical": 1.2,
+			"radiation": 0,
+			"psi": 0,
+			"physical": 2.1
+		}
+	},
+	{
+		"name": "aurora_gas_mask",
+		"parent_route": "weapons",
+		"title": "Протигаз Аврора",
+		"type": "Маска",
+		"image": "items/protects/head/aurora_gas_mask.png",
+		"weight": 2,
+		"price": 12300,
+		"info": [
+			"Звичайний протигаз цивільної оборони з простою гумовою маскою та сучасною, але досить простою системою фільтрації."
+		],
+		"protections": {
+			"thermal": 0.9,
+			"electric": 1.1,
+			"chimical": 1,
+			"radiation": 1.1,
+			"psi": 0,
+			"physical": 1.1
+		}
+	},
+	{
+		"name": "optician_gas_mask",
+		"parent_route": "weapons",
+		"title": "Протигаз оптика",
+		"type": "Маска",
+		"image": "items/protects/head/optician_gas_mask.png",
+		"weight": 2,
+		"price": 10185,
+		"info": [
+			"Цивільний протигаз із суцільним козирком і можливістю встановлення пари фільтрів. Досить популярний в Зоні."
+		],
+		"protections": {
+			"thermal": 0.8,
+			"electric": 0.8,
+			"chimical": 1.1,
+			"radiation": 1.1,
+			"psi": 0,
+			"physical": 2.1
+		}
+	},
+	{
+		"name": "aeroprotection_gas_mask",
+		"parent_route": "weapons",
+		"title": "Аерозахисний протигаз",
+		"type": "Маска",
+		"image": "items/protects/head/aeroprotection_gas_mask.png",
+		"weight": 5,
+		"price": 18000,
+		"info": [
+			"Цей протигаз є стандартним обладнанням для солдатів “Варти”, забезпечує надійний захист від хімічних та радіаційних небезпек. Посилений козирок додає додатковий рівень захисту від розбитих осколків."
+		],
+		"protections": {
+			"thermal": 0.6,
+			"electric": 0.6,
+			"chimical": 0.6,
+			"radiation": 1.1,
+			"psi": 1.1,
+			"physical": 2.6
+		}
+	},
+	{
+		"name": "pa-10_gas_mask",
+		"parent_route": "weapons",
+		"title": "Протигаз ПА-10",
+		"type": "Маска",
+		"image": "items/protects/head/pa-10_gas_mask.png",
+		"weight": 2,
+		"price": 16100,
+		"info": [
+			"Нова, економічно ефективна версія військового протигаза з використанням щільніших матеріалів. Фільтр більше не можна прикріпити з протилежного боку, але розмір корпусу було зменшено, щоб компенсувати це обмеження."
+		],
+		"protections": {
+			"thermal": 0.9,
+			"electric": 1.1,
+			"chimical": 1,
+			"radiation": 0,
+			"psi": 0,
+			"physical": 2.2
+		}
+	},
+	{
+		"name": "pa-7_gas_mask",
+		"parent_route": "weapons",
+		"title": "Протигаз ПА-7",
+		"type": "Маска",
+		"image": "items/protects/head/pa-7_gas_mask.png",
+		"weight": 2,
+		"price": 19206,
+		"info": [
+			"Військова адаптація цивільного протигаза, оснащеного лінзами проти відблисків і гнучким кріпленням фільтра, яке можна прикріпити з будь-якого боку, що спрощує використання зброї для лівшів."
+		],
+		"protections": {
+			"thermal": 0.9,
+			"electric": 1.2,
+			"chimical": 0.9,
+			"radiation": 1.1,
+			"psi": 0,
+			"physical": 2.5
+		}
+	},
+	{
+		"name": "ballistic_helmet",
+		"parent_route": "weapons",
+		"title": "Балістичний шолом",
+		"type": "Маска",
+		"image": "items/protects/head/ballistic_helmet.png",
+		"weight": 3,
+		"price": 24700,
+		"info": [
+			"Цей головний убір забезпечує основний захист від пістолетних куль. Він не містить протигаз."
+		],
+		"protections": {
+			"thermal": 0.6,
+			"electric": 0.6,
+			"chimical": 0.6,
+			"radiation": 0,
+			"psi": 0,
+			"physical": 2.5
+		}
+	},
+	{
+		"name": "sphere_m20_helmet",
+		"parent_route": "weapons",
+		"title": "Шолом Сфера М20",
+		"type": "Маска",
+		"image": "items/protects/head/sphere_m20_helmet.png",
+		"weight": 3,
+		"price": 25800,
+		"info": [
+			"Сучасний титановий шолом з арамідним армуванням, доповнений якісним протигазом, оснащеним фотохромними лінзами."
+		],
+		"protections": {
+			"thermal": 0.7,
+			"electric": 0.9,
+			"chimical": 0.9,
+			"radiation": 1.6,
+			"psi": 0,
+			"physical": 3
+		}
+	},
+	{
+		"name": "mask-1_helmet",
+		"parent_route": "weapons",
+		"title": "Маска-1 Шолом",
+		"type": "Маска",
+		"image": "items/protects/head/mask-1_helmet.png",
+		"weight": 3,
+		"price": 32600,
+		"info": [
+			"Надміцний штурмовий шолом, оснащений балістичними окулярами та арамідним респіратором."
+		],
+		"protections": {
+			"thermal": 0.9,
+			"electric": 0.7,
+			"chimical": 1,
+			"radiation": 2.1,
+			"psi": 1.1,
+			"physical": 3.65
+		}
+	},
+	{
+		"name": "tactical_helmet",
+		"parent_route": "weapons",
+		"title": "Тактичний шолом",
+		"type": "Маска",
+		"image": "items/protects/head/tactical_helmet.png",
+		"weight": 3,
+		"price": 43800,
+		"info": [
+			"Ефективне поєднання балістичного шолома та військового протигазу широко отримало військові частини, що діють у Зоні."
+		],
+		"protections": {
+			"thermal": 0.6,
+			"electric": 0.6,
+			"chimical": 0.6,
+			"radiation": 1.5,
+			"psi": 1.1,
+			"physical": 3.5
+		}
+	}
+]
