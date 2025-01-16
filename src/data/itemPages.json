@@ -1,23 +1,380 @@
 [
-    {
-        "name": "leather_jacket",
-        "parent_route": "weapons",
-        "title": "Шкіряна куртка",
-        "type": "Броня",
-        "image": "items/protects/armors/leather_jacket.png",
-        "weight": 2,
-        "artifacts_slot": "",
-        "price": 11252,
-        "info": [
-            "Звичайна куртка. Забезпечує основний захист від дощу, холоду та, можливо, укусів щурів. Будь-яка стійкість проти радіації чи аномалій залишається прекрасною мрією."
-        ],
-        "protections": {
-            "thermal": 0.3,
-            "electric": 0.3,
-            "chimical": 0.3,
-            "radiation": 0.5,
-            "psi": 0,
-            "physical": 0.8
-        }
-    }
+	{
+		"name": "leather_jacket",
+		"parent_route": "weapons",
+		"title": "Шкіряна куртка",
+		"type": "Броня",
+		"image": "items/protects/armors/leather_jacket.png",
+		"weight": 2,
+		"artifacts_slot": 1,
+		"price": 11252,
+		"info": [
+			"Звичайна куртка. Забезпечує основний захист від дощу, холоду та, можливо, укусів щурів. Будь-яка стійкість проти радіації чи аномалій залишається прекрасною мрією."
+		],
+		"protections": {
+			"thermal": 0.3,
+			"electric": 0.3,
+			"chimical": 0.3,
+			"radiation": 0.5,
+			"psi": 0,
+			"physical": 0.8
+		}
+	},
+	{
+		"name": "debut_suit",
+		"parent_route": "weapons",
+		"title": "Дебютний костюм",
+		"type": "Броня",
+		"image": "items/protects/armors/debut_suit.png",
+		"weight": 3,
+		"artifacts_slot": 1,
+		"price": 13500,
+		"info": [
+			"В основному це куртка, посилена арамідними волокнами та нейлоновою ниткою, доповнена базовою несучою системою. Це слугує мінімумом для виживання. Цей костюм не захищає від аномалій і не зупинить кулю, але його простота та економічність роблять його практичним вибором."
+		],
+		"protections": {
+			"thermal": 0.3,
+			"electric": 0.2,
+			"chimical": 0.3,
+			"radiation": 0.5,
+			"psi": 0,
+			"physical": 1.1
+		}
+	},
+	{
+		"name": "bandit_jacket",
+		"parent_route": "weapons",
+		"title": "Бандитська куртка",
+		"type": "Броня",
+		"image": "items/protects/armors/bandit_jacket.png",
+		"weight": 3,
+		"artifacts_slot": 1,
+		"price": 17200,
+		"info": [
+			"Недорога темна куртка, яку всюди носять бандити. Насправді це не захистить вас, але змусить вас виглядати дурно."
+		],
+		"protections": {
+			"thermal": 0.3,
+			"electric": 0.3,
+			"chimical": 0.3,
+			"radiation": 0,
+			"psi": 0,
+			"physical": 1.1
+		}
+	},
+	{
+		"name": "armored_bandit_jacket",
+		"parent_route": "weapons",
+		"title": "Броньована бандитська куртка",
+		"type": "Броня",
+		"image": "items/protects/armors/bandit_jacket.png",
+		"weight": 5,
+		"artifacts_slot": 1,
+		"price": 17200,
+		"info": [
+			"Ця бандитська шкіряна куртка має вшиті бронепластини та арамідні накладки. Поставляється з джинсами, стилем і ставленням."
+		],
+		"protections": {
+			"thermal": 0.5,
+			"electric": 0.5,
+			"chimical": 0.5,
+			"radiation": 1.1,
+			"psi": 0,
+			"physical": 1.1
+		}
+	},
+	{
+		"name": "wind_of_freedom_suit",
+		"parent_route": "weapons",
+		"title": "Костюм “Вітер свободи”",
+		"type": "Броня",
+		"image": "items/protects/armors/wind_of_freedom_suit.png",
+		"weight": 3,
+		"artifacts_slot": 2,
+		"price": 17100,
+		"info": [
+			"Легкий груповий комплект спорядження “Волі”. Зазвичай використовується новачками, але його також люблять багато ветеранів за його спортивний комфорт."
+		],
+		"protections": {
+			"thermal": 0.5,
+			"electric": 0.5,
+			"chimical": 0.5,
+			"radiation": 1.1,
+			"psi": 0,
+			"physical": 1.2
+		}
+	},
+	{
+		"name": "recruit_suit",
+		"parent_route": "weapons",
+		"title": "Бронежилет для новобранця",
+		"type": "Броня",
+		"image": "items/protects/armors/recruit_suit.png",
+		"weight": 3,
+		"artifacts_slot": 2,
+		"price": 19100,
+		"info": [
+			"Стандартний одяг для рядових членів Служби, цей костюм зловмисно назвали «мішком для трупів» через те, що він не підходить для полювання на мутантів — головного заняття фракції."
+		],
+		"protections": {
+			"thermal": 0.5,
+			"electric": 0.5,
+			"chimical": 0.5,
+			"radiation": 1.1,
+			"psi": 0,
+			"physical": 1.2
+		}
+	},
+	{
+		"name": "ozk_explorers_suit",
+		"parent_route": "weapons",
+		"title": "Костюм дослідника ЗЗК",
+		"type": "Броня",
+		"image": "items/protects/armors/ozk_explorers_suit.png",
+		"weight": 6,
+		"artifacts_slot": 2,
+		"price": 21049,
+		"info": [
+			"Цей захисний костюм, що складається з гумового комбінезона та протигаза, адаптований до невблаганних умов Зони, що значно підвищує шанси власника вижити в аномально та радіаційно забруднених районах. Загальновійськовий захисний комплект (ЗЗК) - прим. редактора."
+		],
+		"protections": {
+			"thermal": 0.4,
+			"electric": 0.7,
+			"chimical": 0.8,
+			"radiation": 0.5,
+			"psi": 0,
+			"physical": 1.6
+		}
+	},
+	{
+		"name": "marauder_suit",
+		"parent_route": "weapons",
+		"title": "Костюм мародера",
+		"type": "Броня",
+		"image": "items/protects/armors/marauder_suit.png",
+		"weight": 5,
+		"artifacts_slot": 1,
+		"price": 22800,
+		"info": [
+			"Поєднання стильної куртки та гідного бронежилета. Це вбрання може бути не найкращим вибором для дослідження аномалій, але підійде до того, щоб забрати речі з нещасного сталкера."
+		],
+		"protections": {
+			"thermal": 0.4,
+			"electric": 0.4,
+			"chimical": 0.5,
+			"radiation": 1.6,
+			"psi": 0,
+			"physical": 1.9
+		}
+	},
+	{
+		"name": "mercenary_suit",
+		"parent_route": "weapons",
+		"title": "Костюм найманця",
+		"type": "Броня",
+		"image": "items/protects/armors/mercenary_suit.png",
+		"weight": 3,
+		"artifacts_slot": 1,
+		"price": 19594,
+		"info": [
+			"Костюм найманців на основі спорядження спецназу. Пластини з високомолекулярного поліетилену та арамідна набивка не тільки звучать футуристично, але й забезпечують чудовий захист від зброї зони високої корозії."
+		],
+		"protections": {
+			"thermal": 0.4,
+			"electric": 0.5,
+			"chimical": 0.5,
+			"radiation": 1.6,
+			"psi": 0,
+			"physical": 2.1
+		}
+	},
+	{
+		"name": "psz-7_military_body_armor",
+		"parent_route": "weapons",
+		"title": "Військовий бронежилет ПСЗ-7",
+		"type": "Броня",
+		"image": "items/protects/armors/psz-7_military_body_armor.png",
+		"weight": 7,
+		"artifacts_slot": 1,
+		"price": 13300,
+		"info": [
+			"Штатний жилет рядового та сержантського складу. За таку низьку ціну його основна мета — захистити вас від інших людей. Хоча це не настільки ефективно для захисту від усього іншого, це все ж набагато краще, ніж нічого."
+		],
+		"protections": {
+			"thermal": 0.3,
+			"electric": 0.4,
+			"chimical": 0.5,
+			"radiation": 2.5,
+			"psi": 0,
+			"physical": 2.1
+		}
+	},
+	{
+		"name": "sunrise_suit",
+		"parent_route": "weapons",
+		"title": "Комбінезон “Зоря”",
+		"type": "Броня",
+		"image": "items/protects/armors/sunrise_suit.png",
+		"weight": 4,
+		"artifacts_slot": 2,
+		"price": 34920,
+		"info": [
+			"Шедевр місцевої майстерності, цей костюм поєднує в собі два шари прогумованої тканини з полімерною підкладкою та бронежилет, ефективний проти пістолетних куль. Розумна ціна “Зорі” і потенціал для оновлення зміцнили статус костюма як  товару, що найбільш продається."
+		],
+		"protections": {
+			"thermal": 0.7,
+			"electric": 0.6,
+			"chimical": 0.7,
+			"radiation": 1.5,
+			"psi": 0,
+			"physical": 2.1
+		}
+	},
+	{
+		"name": "tourist_sunrise_suit",
+		"parent_route": "weapons",
+		"title": "Туристичний комбінезон “Зоря”",
+		"type": "Броня",
+		"image": "items/protects/armors/tourist_sunrise_suit.png",
+		"weight": 3,
+		"artifacts_slot": 2,
+		"price": 57900,
+		"info": [
+			"Колишній власник цього костюма чудово розумівся на розподілі ваги та ешелонуванні спорядження. Перероблені кишені, корсет, що розвантажує спину, додаткові сумки та дорожній рюкзак дозволяють носити з собою більшу вагу, що дуже зручно під час тривалих рейдів у Зону. * Спец. пропозиція попереднього замовлення - прим. редактора."
+		],
+		"protections": {
+			"thermal": 0.7,
+			"electric": 0.6,
+			"chimical": 0.7,
+			"radiation": 1.6,
+			"psi": 0,
+			"physical": 2.1
+		}
+	},
+	{
+		"name": "psz-5v_guardian_of_freedom_suit",
+		"parent_route": "weapons",
+		"title": "ПСЗ-5В Вартовий свободи",
+		"type": "Броня",
+		"image": "items/protects/armors/psz-5v_guardian_of_freedom_suit.png",
+		"weight": 7,
+		"artifacts_slot": 2,
+		"price": 34920,
+		"info": [
+			"Версія “Волі” одного з найпопулярніших броньованих костюмів Зони. Ця модифікація надає перевагу всебічній універсальності без будь-якого конкретного фокусу. Покращена версія Freedom PSZ-5. Це звичайна солдатська броня “Волі” - прим. редактора."
+		],
+		"protections": {
+			"thermal": 0.8,
+			"electric": 0.7,
+			"chimical": 0.9,
+			"radiation": 2.1,
+			"psi": 0,
+			"physical": 2.2
+		}
+	},
+	{
+		"name": "psz-5d_universal_protection",
+		"parent_route": "weapons",
+		"title": "Універсальний захист ПСЗ-5Д",
+		"type": "Броня",
+		"image": "items/protects/armors/psz-5d_universal_protection.png",
+		"weight": 7,
+		"artifacts_slot": 2,
+		"price": 39000,
+		"info": [
+			"Оновлена ​​версія ПСЗ-5, спеціально адаптована для полювання на мутантів, виготовлена ​​кваліфікованими техніками “Долгу”."
+		],
+		"protections": {
+			"thermal": 1.2,
+			"electric": 1.5,
+			"chimical": 1.8,
+			"radiation": 3,
+			"psi": 0,
+			"physical": 1.1
+		}
+	},
+	{
+		"name": "psz-5i_hawk",
+		"parent_route": "weapons",
+		"title": "ПСЗ-5І Яструб",
+		"type": "Броня",
+		"image": "items/protects/armors/psz-5i_hawk.png",
+		"weight": 7,
+		"artifacts_slot": 2,
+		"price": 41000,
+		"info": [
+			"Армійський костюм серії ПСЗ-5, модернізований Новіковим. Очевидно, що армійські стандарти не передбачають зонального захисту, тому броня потребувала серйозних налаштувань."
+		],
+		"protections": {
+			"thermal": 0.8,
+			"electric": 0.7,
+			"chimical": 0.8,
+			"radiation": 2.1,
+			"psi": 0,
+			"physical": 2.3
+		}
+	},
+	{
+		"name": "zircon_suit",
+		"parent_route": "weapons",
+		"title": "Костюм Циркон",
+		"type": "Броня",
+		"image": "items/protects/armors/zircon_suit.png",
+		"weight": 5,
+		"artifacts_slot": 3,
+		"price": 51000,
+		"info": [
+			"Костюм сталкера Monolith, виробник невідомий. Сам вигляд цього костюма лякав будь-якого жителя Зони. Навіть зараз, просто дивлячись на це, викликає у вас неприємні емоції "
+		],
+		"protections": {
+			"thermal": 0.55,
+			"electric": 0.6,
+			"chimical": 0.6,
+			"radiation": 2.1,
+			"psi": 0,
+			"physical": 2.4
+		}
+	},
+	{
+		"name": "psz-20w_convoy",
+		"parent_route": "weapons",
+		"title": "Конвой ПСЗ-20В",
+		"type": "Броня",
+		"image": "items/protects/armors/psz-20w_convoy.png",
+		"weight": 8,
+		"artifacts_slot": 3,
+		"price": 32500,
+		"info": [
+			"Цей костюм представляє нове покоління в серії броньованих костюмів Система Індивідуального Захисту. Спираючись на досвід своїх попередників, його було розроблено в рекордно короткі терміни, щоб задовольнити конкретні вимоги “Варти”."
+		],
+		"protections": {
+			"thermal": 0.6,
+			"electric": 0.7,
+			"chimical": 0.7,
+			"radiation": 2.1,
+			"psi": 0,
+			"physical": 2.5
+		}
+	},
+	{
+		"name": "x7_suit",
+		"parent_route": "weapons",
+		"title": "Захисний костюм X-7",
+		"type": "Броня",
+		"image": "items/protects/armors/x7_suit.png",
+		"weight": 7,
+		"artifacts_slot": 5,
+		"price": 80000,
+		"info": [
+			"Спеціальний комплект спорядження, розроблений для роботи в умовах X7 Lab. Походження невідоме."
+		],
+		"protections": {
+			"thermal": 2.3,
+			"electric": 2.3,
+			"chimical": 2.3,
+			"radiation": 4,
+			"psi": 0,
+			"physical": 4
+		}
+	}
 ]
